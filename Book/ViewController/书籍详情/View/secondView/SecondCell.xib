@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondCell" rowHeight="61" id="KGk-i7-Jjw" customClass="SecondCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shape1h" translatesAutoresizingMaskIntoConstraints="NO" id="vrI-1m-ltV">
+                        <rect key="frame" x="18" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Uhx-J5-XIW"/>
+                            <constraint firstAttribute="height" constant="50" id="aaf-gl-9n4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部论坛内容 25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-uc-0VJ">
+                        <rect key="frame" x="78" y="21" width="112" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vrI-1m-ltV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Cjl-Qj-b6Y"/>
+                    <constraint firstItem="vrI-1m-ltV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="I09-8y-u86"/>
+                    <constraint firstItem="yIO-uc-0VJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ic5-8p-60v"/>
+                    <constraint firstItem="yIO-uc-0VJ" firstAttribute="leading" secondItem="vrI-1m-ltV" secondAttribute="trailing" constant="10" id="l5J-d3-jKu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="SecondLb" destination="yIO-uc-0VJ" id="ZzK-Fr-VQF"/>
+            </connections>
+            <point key="canvasLocation" x="412" y="374.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Shape1h" width="30" height="30"/>
+    </resources>
+</document>

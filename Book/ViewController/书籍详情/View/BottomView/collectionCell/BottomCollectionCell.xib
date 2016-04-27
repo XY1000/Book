@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BottomCollectionCell" id="kOJ-oG-O5H" customClass="BottomCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="142.5" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142.5" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qidong0.png" translatesAutoresizingMaskIntoConstraints="NO" id="ygm-yO-BaZ">
+                        <rect key="frame" x="21" y="50" width="100" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Qbr-w9-l5k"/>
+                            <constraint firstAttribute="height" constant="120" id="WnY-tc-eaE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不以中国           " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3a-nE-n5S">
+                        <rect key="frame" x="19.5" y="175" width="104" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="ygm-yO-BaZ" firstAttribute="centerX" secondItem="kOJ-oG-O5H" secondAttribute="centerX" id="4jc-So-iAL"/>
+                <constraint firstItem="M3a-nE-n5S" firstAttribute="centerX" secondItem="kOJ-oG-O5H" secondAttribute="centerX" id="CSa-AW-A7b"/>
+                <constraint firstAttribute="bottom" secondItem="M3a-nE-n5S" secondAttribute="bottom" constant="5" id="YBu-a3-vzc"/>
+                <constraint firstItem="M3a-nE-n5S" firstAttribute="top" secondItem="ygm-yO-BaZ" secondAttribute="bottom" constant="5" id="y9Q-MZ-GCF"/>
+            </constraints>
+            <size key="customSize" width="142.5" height="198"/>
+            <connections>
+                <outlet property="bookImageView" destination="ygm-yO-BaZ" id="r2j-U5-RcB"/>
+                <outlet property="bookNameLb" destination="M3a-nE-n5S" id="zKc-fF-0WP"/>
+            </connections>
+            <point key="canvasLocation" x="218.25" y="193"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="qidong0.png" width="1242" height="2208"/>
+    </resources>
+</document>

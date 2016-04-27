@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReadBookViewController">
+            <connections>
+                <outlet property="fontSlider" destination="ARF-vA-ziv" id="S7h-jG-Yht"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9w5-Sz-NZl" customClass="FontView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="Aa" maximumValueImage="Aa" translatesAutoresizingMaskIntoConstraints="NO" id="ARF-vA-ziv">
+                    <rect key="frame" x="8" y="10" width="584" height="31"/>
+                    <color key="minimumTrackTintColor" red="0.38823529410000002" green="0.31372549020000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="sliderChangeForFont:" destination="-1" eventType="valueChanged" id="xbs-d3-pPG"/>
+                    </connections>
+                </slider>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8XG-u2-HUg">
+                    <rect key="frame" x="10" y="50" width="580" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="evk-tr-cbN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ew-e7-P6A">
+                    <rect key="frame" x="270" y="59" width="60" height="33"/>
+                    <state key="normal" title="默认字体"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8XG-u2-HUg" firstAttribute="width" secondItem="ARF-vA-ziv" secondAttribute="width" id="5Nf-Nq-Phz"/>
+                <constraint firstItem="ARF-vA-ziv" firstAttribute="top" secondItem="9w5-Sz-NZl" secondAttribute="top" constant="10" id="H4b-f1-i4s"/>
+                <constraint firstItem="4ew-e7-P6A" firstAttribute="top" secondItem="8XG-u2-HUg" secondAttribute="bottom" constant="8" id="LUI-RL-Hae"/>
+                <constraint firstItem="4ew-e7-P6A" firstAttribute="centerX" secondItem="9w5-Sz-NZl" secondAttribute="centerX" id="SZg-qO-wjB"/>
+                <constraint firstItem="8XG-u2-HUg" firstAttribute="height" secondItem="ARF-vA-ziv" secondAttribute="height" id="VdT-kO-OEg"/>
+                <constraint firstItem="8XG-u2-HUg" firstAttribute="centerY" secondItem="9w5-Sz-NZl" secondAttribute="centerY" id="c61-5Y-WWo"/>
+                <constraint firstAttribute="bottom" secondItem="4ew-e7-P6A" secondAttribute="bottom" constant="8" id="eAQ-eK-ibh"/>
+                <constraint firstAttribute="trailing" secondItem="ARF-vA-ziv" secondAttribute="trailing" constant="10" id="lYO-gW-KAM"/>
+                <constraint firstItem="ARF-vA-ziv" firstAttribute="leading" secondItem="9w5-Sz-NZl" secondAttribute="leading" constant="10" id="tGe-UR-b9i"/>
+                <constraint firstItem="8XG-u2-HUg" firstAttribute="centerX" secondItem="9w5-Sz-NZl" secondAttribute="centerX" id="tsf-na-chw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="VdT-kO-OEg"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="64" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Aa" width="30" height="30"/>
+    </resources>
+</document>

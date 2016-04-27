@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  Book
+//
+//  Created by Apple on 16/3/21.
+//  Copyright © 2016年 Chenghui. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+
+#import <AFNetworking.h>        //Github排名第一的第三方网络请求类库，封装了系统的NSURLSession+NSOperation
+#import <UIKit+AFNetworking.h>      //对UIKit类添加类拓展，让诸如UIButton, UIImageView等拥有了网络加载图片的功能
+
+/** 自定义工厂类，功能类。 其中存放各种自定义方法 */
+#import "Factory.h"
+
+//基础设置
+#import "Setting.h"
+
+//用于存放全局宏定义 或者 静态字符串
+#import "Constants.h"
+
+/* 改变系统的target+selector模式为 block模式。 带来紧凑的代码风格，高效率的回调执行 */
+#import <BlocksKit.h>
+#import <BlocksKit+MessageUI.h>
+#import <BlocksKit+UIKit.h>
+/* --------------------------- */
+
+#import <MJRefresh.h>    //优秀的滚动视图头部和脚步刷新效果
+#import <MJExtension.h>     //优秀的Json解析类库
+
+#import <FMDB.h>
+#import <RESideMenu.h>
+
+#import <MBProgressHUD.h>       //实现安卓toast风格提示，弹出提示框架
+#import <Masonry.h>         //超好用的链式书写AutoLayout的第三方类库，好用的根本停不下来
+#import "NSObject+Common.h"       //个人添加的在界面上弹出提示的类拓展
+
+#endif /* PrefixHeader_pch */

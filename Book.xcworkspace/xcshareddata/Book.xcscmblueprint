@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "57A893720C8641956F51C41085DFB2F2567936E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "6b747e0e-07d0-4d3a-bedc-c516502fe8c9++5357" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "57A893720C8641956F51C41085DFB2F2567936E5" : 0,
+    "6b747e0e-07d0-4d3a-bedc-c516502fe8c9++5357" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "08CCE7FF-4BCA-40FE-A5C2-65301BB0566C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "57A893720C8641956F51C41085DFB2F2567936E5" : "book\/",
+    "6b747e0e-07d0-4d3a-bedc-c516502fe8c9++5357" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Book",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Book.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/XY1000\/Book.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "57A893720C8641956F51C41085DFB2F2567936E5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/120.25.158.69\/svn\/repository",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6b747e0e-07d0-4d3a-bedc-c516502fe8c9++5357"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GGj-VN-49k">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Read Collection View Controller-->
+        <scene sceneID="ecu-l5-YEw">
+            <objects>
+                <collectionViewController storyboardIdentifier="ReadCollectionViewController" id="GGj-VN-49k" customClass="ReadCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Zl5-pz-eGZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2Rc-kT-ZA2">
+                            <size key="itemSize" width="277" height="381"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="readCollectionCell" id="zZW-4u-v4N" customClass="ReadCollectionViewCell">
+                                <rect key="frame" x="0.0" y="143" width="277" height="381"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="277" height="381"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVe-sH-oDk">
+                                            <rect key="frame" x="10" y="10" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1J9-ZS-ush">
+                                            <rect key="frame" x="225" y="350" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lHV-pr-JXj" customClass="HTextView">
+                                            <rect key="frame" x="0.0" y="36" width="267" height="309"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <gestureRecognizers/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1J9-ZS-ush" secondAttribute="bottom" constant="10" id="Aid-Qj-nwo"/>
+                                    <constraint firstItem="lHV-pr-JXj" firstAttribute="leading" secondItem="zZW-4u-v4N" secondAttribute="leading" id="Beo-XY-p0k"/>
+                                    <constraint firstAttribute="trailing" secondItem="lHV-pr-JXj" secondAttribute="trailing" constant="10" id="GiL-PH-fx8"/>
+                                    <constraint firstItem="SVe-sH-oDk" firstAttribute="leading" secondItem="zZW-4u-v4N" secondAttribute="leading" constant="10" id="M4L-bP-NeQ"/>
+                                    <constraint firstItem="lHV-pr-JXj" firstAttribute="top" secondItem="SVe-sH-oDk" secondAttribute="bottom" constant="5" id="QFh-hV-mSi"/>
+                                    <constraint firstItem="SVe-sH-oDk" firstAttribute="top" secondItem="zZW-4u-v4N" secondAttribute="top" constant="10" id="TNn-Cb-JN3"/>
+                                    <constraint firstItem="1J9-ZS-ush" firstAttribute="top" secondItem="lHV-pr-JXj" secondAttribute="bottom" constant="5" id="Ujn-tX-2Sl"/>
+                                    <constraint firstAttribute="trailing" secondItem="1J9-ZS-ush" secondAttribute="trailing" constant="10" id="vHZ-RF-r9X"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="contentTextView" destination="lHV-pr-JXj" id="n6N-hk-Yp5"/>
+                                    <outlet property="footerLb" destination="1J9-ZS-ush" id="ovR-CY-fdf"/>
+                                    <outlet property="headerLb" destination="SVe-sH-oDk" id="T5w-KA-OAn"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="GGj-VN-49k" id="9wN-bc-Yxf"/>
+                            <outlet property="delegate" destination="GGj-VN-49k" id="pj9-Yt-6J9"/>
+                        </connections>
+                    </collectionView>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V34-pV-Il4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472.5" y="393.5"/>
+        </scene>
+    </scenes>
+</document>

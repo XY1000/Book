@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nEN-eE-O1e">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Left View Controller-->
+        <scene sceneID="0zA-9I-OON">
+            <objects>
+                <viewController storyboardIdentifier="LeftViewController" id="nEN-eE-O1e" customClass="LeftViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rck-Iz-6xB"/>
+                        <viewControllerLayoutGuide type="bottom" id="TBa-z7-I8C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2bP-Gu-mZi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iXL-bM-c0u">
+                                <rect key="frame" x="0.0" y="0.0" width="365" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="搜索全书内容" id="GRn-HX-6Ff">
+                                    <rect key="frame" x="0.0" y="0.0" width="365" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeftCell" rowHeight="60" id="Rkh-TP-Vyp" customClass="LeftTableViewCell">
+                                        <rect key="frame" x="0.0" y="72" width="365" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rkh-TP-Vyp" id="nID-br-hhb">
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第几章" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc3-nX-C8U">
+                                                    <rect key="frame" x="10" y="20" width="48" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="前言" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30n-J7-adU">
+                                                    <rect key="frame" x="63" y="20" width="32" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Target" translatesAutoresizingMaskIntoConstraints="NO" id="FD3-F7-IUz">
+                                                    <rect key="frame" x="315" y="10" width="40" height="40"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="30n-J7-adU" firstAttribute="leading" secondItem="cc3-nX-C8U" secondAttribute="trailing" constant="5" id="ADI-L3-taP"/>
+                                                <constraint firstItem="cc3-nX-C8U" firstAttribute="centerY" secondItem="nID-br-hhb" secondAttribute="centerY" id="CEN-KS-BKd"/>
+                                                <constraint firstAttribute="bottom" secondItem="cc3-nX-C8U" secondAttribute="bottom" constant="5" id="E0a-xd-9Rf"/>
+                                                <constraint firstItem="FD3-F7-IUz" firstAttribute="centerY" secondItem="nID-br-hhb" secondAttribute="centerY" id="WAP-0Q-Sct"/>
+                                                <constraint firstItem="cc3-nX-C8U" firstAttribute="leading" secondItem="nID-br-hhb" secondAttribute="leading" constant="10" id="a9B-8g-bbL"/>
+                                                <constraint firstItem="30n-J7-adU" firstAttribute="leading" secondItem="cc3-nX-C8U" secondAttribute="trailing" constant="5" id="d2D-V6-sYf"/>
+                                                <constraint firstItem="30n-J7-adU" firstAttribute="centerY" secondItem="nID-br-hhb" secondAttribute="centerY" id="nDH-rE-UuF"/>
+                                                <constraint firstItem="cc3-nX-C8U" firstAttribute="top" secondItem="nID-br-hhb" secondAttribute="top" constant="5" id="qgR-gH-WcC"/>
+                                                <constraint firstAttribute="trailing" secondItem="FD3-F7-IUz" secondAttribute="trailing" constant="10" id="qyu-67-zUd"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="E0a-xd-9Rf"/>
+                                                    <exclude reference="qgR-gH-WcC"/>
+                                                    <exclude reference="ADI-L3-taP"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="chapterNameLb" destination="30n-J7-adU" id="3UH-H0-Uti"/>
+                                            <outlet property="chapterNumLb" destination="cc3-nX-C8U" id="zuV-sc-MFm"/>
+                                            <outlet property="lockImGv" destination="FD3-F7-IUz" id="OeH-xi-fui"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nEN-eE-O1e" id="Vf8-Lc-zmP"/>
+                                    <outlet property="delegate" destination="nEN-eE-O1e" id="8QE-CE-UWe"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MEi-54-oq3">
+                                <rect key="frame" x="20" y="629" width="305" height="29"/>
+                                <segments>
+                                    <segment title="目录"/>
+                                    <segment title="书签"/>
+                                    <segment title="划线"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentClick:" destination="nEN-eE-O1e" eventType="valueChanged" id="ILi-T4-FpP"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iXL-bM-c0u" firstAttribute="top" secondItem="2bP-Gu-mZi" secondAttribute="top" id="5v5-Lo-QqA"/>
+                            <constraint firstItem="TBa-z7-I8C" firstAttribute="top" secondItem="MEi-54-oq3" secondAttribute="bottom" constant="10" id="6mQ-wB-WqE"/>
+                            <constraint firstItem="iXL-bM-c0u" firstAttribute="leading" secondItem="2bP-Gu-mZi" secondAttribute="leading" id="Axp-VA-YLA"/>
+                            <constraint firstAttribute="bottom" secondItem="iXL-bM-c0u" secondAttribute="bottom" id="Hds-yI-Rea"/>
+                            <constraint firstAttribute="trailing" secondItem="MEi-54-oq3" secondAttribute="trailing" constant="50" id="Ohr-fd-DIV"/>
+                            <constraint firstAttribute="trailing" secondItem="iXL-bM-c0u" secondAttribute="trailing" constant="10" id="Yc6-Wl-7Hh"/>
+                            <constraint firstItem="MEi-54-oq3" firstAttribute="top" secondItem="iXL-bM-c0u" secondAttribute="bottom" constant="10" id="ecP-so-weu"/>
+                            <constraint firstItem="MEi-54-oq3" firstAttribute="leading" secondItem="2bP-Gu-mZi" secondAttribute="leading" constant="20" id="eqS-JR-hqn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Hds-yI-Rea"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="rightLayout" destination="Yc6-Wl-7Hh" id="KeJ-Fn-ovF"/>
+                        <outlet property="segmentRightLayout" destination="Ohr-fd-DIV" id="tCz-5Y-mhU"/>
+                        <outlet property="tableView" destination="iXL-bM-c0u" id="UAw-ob-PYe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGG-pc-ocU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.5" y="353.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Target" width="40" height="40"/>
+    </resources>
+</document>
